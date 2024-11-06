@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ランダムリンク</title>
+    <script>
+        function redirectToRandomLink() {
+            // リンクのリストを定義
+            const links = [
+                'https://docs.google.com/forms/d/e/1FAIpQLSeXhFJm8eTpwx7wD20yVoTAKtk1RbvqJEgls-K-3CiRTRw2dA/viewform?usp=sf_link',
+                'https://docs.google.com/forms/d/e/1FAIpQLSdF7uQ9n9co2YTeNfDNYdJLc209Qnr3VpNpiSVdwiuaO_YC6Q/viewform?usp=sf_link',
+                'https://docs.google.com/forms/d/e/1FAIpQLSfPIhg65MslDNwakb5-hs2sI8BPvEu2ZZQn3PonHjDh7fu_ew/viewform?usp=sf_link'
+            ];
+
+            // リンクをランダムに選ぶ
+            const randomIndex = Math.floor(Math.random() * links.length);
+
+            // 選ばれたリンクにリダイレクト
+            window.location.href = links[randomIndex];
+        }
+    </script>
+</head>
+<body>
+    <h1>実験に参加していただきありがとうございます</h1>
+    <a href="#" onclick="redirectToRandomLink(); return false;">START</a>
+</body>
+</html>
